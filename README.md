@@ -1,5 +1,6 @@
 # MakeAthon-Project
 ## Swissport X ##
+### Autor: Claudio Vinci, Jan Steiner, Robin Meier, Chiara Mamie, Sujani Ragumar
 
 Me and four other colleagues from the University of Applied Sciences Northwestern Switzerland (FHNW) in Olten developed a project for Swissport as part of the MakeAthon module.
 The company needed a platform that would allow communication between airport staff and the reinforcement agent. 
