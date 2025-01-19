@@ -1,0 +1,319 @@
+[
+  {
+    "id": "Passagierabfertigung",
+    "label": "Task",
+    "type": "vertex",
+    "properties": {
+      "Dependencies": [
+        {
+          "id": "a824996a-7874-493a-b265-c683b20976ff",
+          "value": "Crew-Einsatz"
+        }
+      ],
+      "Name": [
+        {
+          "id": "26071627-ef4a-48d9-8973-77a8f97d86f1",
+          "value": "Passagierabfertigung"
+        }
+      ],
+      "AmountOfPersonsNeeded": [
+        {
+          "id": "915c0186-6049-4a78-9c0d-c8b1b5254663",
+          "value": 10
+        }
+      ],
+      "Status": [
+        {
+          "id": "8c246c60-2e27-427a-ac20-1665a3e13531",
+          "value": "pending"
+        }
+      ],
+      "Startzeit": [
+        {
+          "id": "b0b192a2-cefb-4ec5-b97e-3c982d878772",
+          "value": "null"
+        }
+      ],
+      "Endzeit": [
+        {
+          "id": "a5dcb843-6463-410d-962d-2490157be2e2",
+          "value": "null"
+        }
+      ],
+      "Dauer": [
+        {
+          "id": "acce52ff-412f-4c1a-aea7-816b0885e7ad",
+          "value": "null"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Passagierabfertigung|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Crew-Einsatz",
+    "label": "Task",
+    "type": "vertex",
+    "properties": {
+      "Dependencies": [
+        {
+          "id": "5a34f9d1-1001-4099-9461-201e601beab3",
+          "value": ""
+        }
+      ],
+      "Name": [
+        {
+          "id": "c4dc7647-689e-4558-a254-5806606ed7dd",
+          "value": "Crew-Einsatz"
+        }
+      ],
+      "AmountOfPersonsNeeded": [
+        {
+          "id": "69cf6cc4-b571-4092-9c6e-7a478802fee2",
+          "value": 3
+        }
+      ],
+      "Status": [
+        {
+          "id": "2e5622e4-5001-402c-acea-024d8c67a700",
+          "value": "pending"
+        }
+      ],
+      "Startzeit": [
+        {
+          "id": "ec2f83cd-6c7a-46d2-981e-2f7dc030fc7f",
+          "value": "null"
+        }
+      ],
+      "Endzeit": [
+        {
+          "id": "de585487-14b0-443b-bf45-d0f139c6c1fc",
+          "value": "null"
+        }
+      ],
+      "Dauer": [
+        {
+          "id": "90015e99-c7b2-4712-8dea-615e15f88013",
+          "value": "null"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Crew-Einsatz|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Crew vor Passagier",
+    "label": "Regel",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "e379296f-958b-491c-8fc1-0923d45cbe15",
+          "value": "Crew vor Passagier"
+        }
+      ],
+      "Typ": [
+        {
+          "id": "05edb087-9c49-4191-82de-9603286437ca",
+          "value": "Abhängigkeit"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Crew vor Passagier|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "10 Personen in Sektor 3",
+    "label": "Bedingung",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "29913db6-1b48-4389-80b3-ccd5e48c7a39",
+          "value": "10 Personen in Sektor 3"
+        }
+      ],
+      "Sektor": [
+        {
+          "id": "b3499fd9-0f56-4057-82bf-21f70e1ab2f9",
+          "value": 3
+        }
+      ],
+      "MindestAnzahlPersonen": [
+        {
+          "id": "1dff6101-6cae-4e7a-8815-4656771fa00c",
+          "value": 10
+        }
+      ],
+      "Key": [
+        {
+          "id": "10 Personen in Sektor 3|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Sektor 1",
+    "label": "Sektor",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "e8015b8a-807a-4d95-bf5d-3ffc494547a3",
+          "value": "Sektor 1"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Sektor 1|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Sektor 2",
+    "label": "Sektor",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "f8a813b5-ae72-4301-af2a-57d7815069fa",
+          "value": "Sektor 2"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Sektor 2|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Sektor 3",
+    "label": "Sektor",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "0211c693-e1aa-4ed9-8401-7aa6652bd8d0",
+          "value": "Sektor 3"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Sektor 3|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Person 1",
+    "label": "Person",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "fc65eecc-f849-4a62-93a4-51b32080a3f6",
+          "value": "Person 1"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Person 1|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Person 2",
+    "label": "Person",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "0a168887-92b2-43eb-9fd1-d54018a59b7e",
+          "value": "Person 2"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Person 2|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1 Personen in Sektor 2",
+    "label": "Bedingung",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "00d51fe7-b0ff-4d30-98ca-605d0e1507d9",
+          "value": "1 Personen in Sektor 2"
+        }
+      ],
+      "Sektor": [
+        {
+          "id": "4899630f-31b7-40eb-a3a9-f8a9b7be106d",
+          "value": 2
+        }
+      ],
+      "MindestAnzahlPersonen": [
+        {
+          "id": "58be7efa-7728-4c56-9075-7d21dcfbe3ef",
+          "value": 1
+        }
+      ],
+      "Key": [
+        {
+          "id": "1 Personen in Sektor 2|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "Crew Start",
+    "label": "Regel",
+    "type": "vertex",
+    "properties": {
+      "Name": [
+        {
+          "id": "5357e6c3-b5e3-493c-a11c-84435138e5fe",
+          "value": "Crew Start"
+        }
+      ],
+      "Typ": [
+        {
+          "id": "d4f8c848-a076-4f36-ae53-efcc9e495887",
+          "value": "Start"
+        }
+      ],
+      "Key": [
+        {
+          "id": "Crew Start|Key",
+          "value": "defaultpartitionkey"
+        }
+      ]
+    }
+  }
+]
