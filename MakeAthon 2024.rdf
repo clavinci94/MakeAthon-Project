@@ -1,0 +1,762 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#UsesAmountOfStaff -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#UsesAmountOfStaff">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#AmountOfStaff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#UsesAmountOfTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#UsesAmountOfTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasksTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#can_cause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#can_cause">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Alarms"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayReasons"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ImportRealTaskTime"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Metar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedDeparture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedLanding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#hasStartTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#hasStartTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskStartTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#influences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#influences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasksTime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedDeparture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedLanding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#needsPreperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#needsPreperation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#standsin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#standsin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Plane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#usesPassengers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#usesPassengers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Passangers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#usesStaff -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#usesStaff">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Departure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Departure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedDeparture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Landing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Landing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedLanding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#AmountOfStaff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskStartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskStartTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskStartTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskTimeDelay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskTimeDelay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasksTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TimeDelay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TimeDelay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Alarms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Alarms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#AmountOfStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#AmountOfStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayReasons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayReasons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ImportRealTaskTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ImportRealTaskTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#RealtimeInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlanePlaceInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Metar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Metar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Problems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Passangers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Passangers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Plane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Plane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlanePlaceInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlanePlaceInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlanePlaceInformation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlaneProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlaneProcessing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Planing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Planing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedDeparture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedDeparture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Planing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedLanding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlannedLanding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Planing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PlaneProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasksTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasksTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Problems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Problems"/>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#RealtimeInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#RealtimeInformation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskStartTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TaskStartTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Arrival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Arrival">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#None"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:00:00</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#BoardingNewPassengers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#BoardingNewPassengers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:usesPassengers rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassangersNew"/>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:28:55</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1010</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CabinCleaning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CabinCleaning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CleaningTeam"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:12:15</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">476</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CabinCrew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CabinCrew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Catering1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Catering1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CateringCrew"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:06:30</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Catering2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Catering2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#1"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CateringCrew"/>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:24:00</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">335</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CateringCrew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CateringCrew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CleaningTeam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CleaningTeam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ClosingAircraftDoors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ClosingAircraftDoors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CabinCrew"/>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">01:00:00</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DedockingGate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DedockingGate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">01:00:33</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DockingAtTheGate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DockingAtTheGate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:01:24</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Embraer_ERJ-190 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Embraer_ERJ-190">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Plane"/>
+        <untitled-ontology-5:has rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime"/>
+        <untitled-ontology-5:standsin rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ZuerichAirport"/>
+        <untitled-ontology-5:Departure rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-01T01:05:00</untitled-ontology-5:Departure>
+        <untitled-ontology-5:Landing rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-01T12:00:00</untitled-ontology-5:Landing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Frontwheelstopper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Frontwheelstopper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:00:39</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#LoadingnewBaggage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#LoadingnewBaggage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:17:56</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#None -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#None">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#OpeningAircraft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#OpeningAircraft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#CabinCrew"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:02:54</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassangersNew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassangersNew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Passangers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassangersOld -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassangersOld">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Passangers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassengerDisembarkation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassengerDisembarkation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:usesPassengers rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PassangersOld"/>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:03:00</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Pilot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Pilot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#staff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PushbackAndTaxing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PushbackAndTaxing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#7"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</untitled-ontology-5:TaskTimeDelay>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#time">01:03:00</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#SNOW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#SNOW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Metar"/>
+        <untitled-ontology-5:can_cause rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#DelayTime"/>
+        <untitled-ontology-5:TimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:30:00</untitled-ontology-5:TimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Strom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Strom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:00:39</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2872</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TechnicalInspection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#TechnicalInspection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Pilot"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:32:30</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#UnloadingBaggage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#UnloadingBaggage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:01:53</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">780</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ZuerichAirport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#ZuerichAirport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#5SafetyTriangle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#5SafetyTriangle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#PreperationTasks"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#3"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#4"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6"/>
+        <untitled-ontology-5:hasLocation rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#7"/>
+        <untitled-ontology-5:usesStaff rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#GroundStaff"/>
+        <untitled-ontology-5:StaffAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-5:StaffAmount>
+        <untitled-ontology-5:TaskStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">00:00:55</untitled-ontology-5:TaskStartTime>
+        <untitled-ontology-5:TaskTimeDelay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</untitled-ontology-5:TaskTimeDelay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/robin/ontologies/2024/9/untitled-ontology-5#StaffLocation"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
